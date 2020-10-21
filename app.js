@@ -99,7 +99,13 @@ app.get('/lang', (req, res, next) => {
 
 app.get('/skills', (req, res, next) => {
 	let skcomb = combineSkills(resum);
-	res.status(200).json(skcomb);
+	let ret = [];
+	skcomb.forEach((item) => {
+		if(item.duration > 0) {
+			ret.push(item);
+		}
+	});
+	res.status(200).json(ret);
 });
 
 module.exports = app;

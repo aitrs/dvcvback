@@ -1,7 +1,7 @@
 {
-  "name": "backdvcv",
+  "name": "dvcvback",
   "version": "1.0.0",
-  "description": "Small backend for my personal résumé",
+  "description": "Small backend for my résumé",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,14 +11,15 @@
     "url": "git+https://github.com/aitrs/dvcvback.git"
   },
   "keywords": [
-    "résumé",
-    "cv",
-    "backend"
+    "résumé"
   ],
   "author": "Dorian Vuolo",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/aitrs/dvcvback/issues"
   },
-  "homepage": "https://github.com/aitrs/dvcvback#readme"
+  "homepage": "https://github.com/aitrs/dvcvback#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

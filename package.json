@@ -20,6 +20,11 @@
   },
   "homepage": "https://github.com/aitrs/dvcvback#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "blob": "^0.1.0",
+    "blob-stream": "^0.1.3",
+    "brfs": "^2.0.2",
+    "express": "^4.17.1",
+    "get-stream": "^6.0.0",
+    "pdfkit": "^0.11.0"
   }
 }

@@ -20,7 +20,7 @@ app.set('port', port);
 const server = http.createServer(app);
 
 const errHandler = (err) => {
-        if (error.syscall !== 'listen') {
+        if (err.syscall !== 'listen') {
                 throw err;
         }
 

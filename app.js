@@ -15,7 +15,7 @@ const combineSkills = (resum) => {
 	let skcmb = [];
 	let now = Date.now();
 	let effend;
-	let ybase = 1000*60*60*24*365.15;
+	let ybase = 1000*60*60*24*365.25;
 
 	resum.experiences.forEach((ex)=> {
 		ex.skills.forEach((sk) => {

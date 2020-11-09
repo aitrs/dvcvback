@@ -144,7 +144,7 @@ const resume = {
 	langs: [
 		{ label: "French", level: "Native" },
 		{ label: "English", level: "Technical, good" },
-		{ label: "Spanish", level: "Elementary" }
+		{ label: "Spanish", level: "Basic" }
 	]
 }
 

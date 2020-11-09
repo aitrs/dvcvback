@@ -1,5 +1,9 @@
 const http = require('http');
 const app = require('./app');
+const fs = require('fs');
+const pcert = fs.readFileSync('/root/certs/dorianvuolo.info/dorianvuolo.info.crt');
+const pkey = fs.readFileSync('/root/certs/dorianvuolo.info/myserver.key');
+
 const nport = (val) => {
 	const p = parseInt(val, 10);
 
@@ -17,7 +21,10 @@ const nport = (val) => {
 const port = nport(process.env.PORT || 8080);
 app.set('port', port);
 
-const server = http.createServer(app);
+const server = http.createServer({
+	key: pkey,
+	cert: pcert
+}, app);
 
 const errHandler = (err) => {
         if (err.syscall !== 'listen') {
